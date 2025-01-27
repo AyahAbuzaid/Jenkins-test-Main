@@ -7,4 +7,11 @@
     <RootNamespace>Jenkins_test</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="src\main\java\" />
+    <Folder Include="src\main\resources\" />
+    <Folder Include="src\test\java\" />
+    <Folder Include="src\test\resources\" />
+  </ItemGroup>
+
 </Project>
