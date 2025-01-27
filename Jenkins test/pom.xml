@@ -35,10 +35,24 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.10.1</version>
-				<!-- Make sure to use a version compatible with Java 21 -->
 				<configuration>
 					<release>21</release>
 					<!-- This will target Java 21 -->
+				</configuration>
+			</plugin>
+
+			<!-- Maven JAR Plugin to build the JAR file and set the main class -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.4.1</version>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Main-Class>com.ayahabuzaid.Main</Main-Class>
+							<!-- Replace with your main class -->
+						</manifestEntries>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
