@@ -1,10 +1,7 @@
-{
-  "exclude": [
-    "**/bin",
-    "**/bower_components",
-    "**/jspm_packages",
-    "**/node_modules",
-    "**/obj",
-    "**/platforms"
-  ]
+package com.ayahabuzaid;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, Jenkins!");
+    }
 }
